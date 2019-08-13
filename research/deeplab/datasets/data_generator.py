@@ -96,7 +96,7 @@ _ADE20K_INFORMATION = DatasetDescriptor(
     ignore_label=0,
 )
 
-_GREYMAPS_INFORMATION = DatasetDescriptor(
+_GRAYMAPS_INFORMATION = DatasetDescriptor(
     splits_to_sizes={
         'train': 871,  # num of samples in images/training
         'val': 245,  # num of samples in images/validation
@@ -105,11 +105,22 @@ _GREYMAPS_INFORMATION = DatasetDescriptor(
     ignore_label=0,
 )
 
+_COLORMAPS_INFORMATION = DatasetDescriptor(
+    splits_to_sizes={
+        'train': 1119,  # num of samples in images/training
+        'trainval: 209,
+        'val': 209,  # num of samples in images/validation
+    },
+    num_classes=3,
+    ignore_label=255,
+)
+
 _DATASETS_INFORMATION = {
     'cityscapes': _CITYSCAPES_INFORMATION,
     'pascal_voc_seg': _PASCAL_VOC_SEG_INFORMATION,
     'ade20k': _ADE20K_INFORMATION,
-    'grey_maps': _GREYMAPS_INFORMATION, # my maps dataset
+    'grey_maps': _GRAYMAPS_INFORMATION, # my maps dataset
+    'color_maps': _COLORMAPS_INFORMATION
 }
 
 # Default file pattern of TFRecord of TensorFlow Example.
