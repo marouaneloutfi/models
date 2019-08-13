@@ -98,11 +98,11 @@ _ADE20K_INFORMATION = DatasetDescriptor(
 
 _GREYMAPS_INFORMATION = DatasetDescriptor(
     splits_to_sizes={
-        'train': 1555,  # num of samples in images/training
-        'val': 405,  # num of samples in images/validation
+        'train': 871,  # num of samples in images/training
+        'val': 245,  # num of samples in images/validation
     },
     num_classes=4,
-    ignore_label=255,
+    ignore_label=0,
 )
 
 _DATASETS_INFORMATION = {
