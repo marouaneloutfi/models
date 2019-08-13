@@ -108,8 +108,8 @@ _GRAYMAPS_INFORMATION = DatasetDescriptor(
 _COLORMAPS_INFORMATION = DatasetDescriptor(
     splits_to_sizes={
         'train': 1119,  # num of samples in images/training
-        'trainval: 209,
-        'val': 209  # num of samples in images/validation
+        'trainval': 209,
+        'val': 209,  # num of samples in images/validation
     },
     num_classes=3,
     ignore_label=255,
