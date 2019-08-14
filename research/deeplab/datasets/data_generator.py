@@ -111,8 +111,8 @@ _COLORMAPS_INFORMATION = DatasetDescriptor(
         'trainval': 209,
         'val': 209,  # num of samples in images/validation
     },
-    num_classes=3,
-    ignore_label=255,
+    num_classes=2,
+    ignore_label=0,
 )
 
 _DATASETS_INFORMATION = {
