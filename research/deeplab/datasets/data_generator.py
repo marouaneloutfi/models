@@ -102,7 +102,7 @@ _GRAYMAPS_INFORMATION = DatasetDescriptor(
         'val': 245,  # num of samples in images/validation
     },
     num_classes=4,
-    ignore_label=0,
+    ignore_label=255,
 )
 
 _COLORMAPS_INFORMATION = DatasetDescriptor(
@@ -111,7 +111,7 @@ _COLORMAPS_INFORMATION = DatasetDescriptor(
         'trainval': 176,
         'val': 176,  # num of samples in images/validation
     },
-    num_classes=2,
+    num_classes=3,
     ignore_label=255,
 )
 
